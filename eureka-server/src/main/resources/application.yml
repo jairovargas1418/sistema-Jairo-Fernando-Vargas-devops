@@ -1,0 +1,13 @@
+server:
+  port: 8761 # Puerto del Eureka Server
+
+spring:
+  application:
+    name: eureka-server # Nombre del servidor
+
+eureka:
+  client:
+    register-with-eureka: false # El servidor no se registra consigo mismo
+    fetch-registry: false       # No obtiene registros de otros servidores
+  server:
+    enable-self-preservation: false # Desactiva preservación automática en desarrollo
